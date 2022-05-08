@@ -75,29 +75,40 @@ public class Runner {
 
     }
 }
-import java.util.*;
+import java.util.Stack;
 public class Solution {
 
 	public static int[] stockSpan(int[] price) {
-		int span[]=new int[price.length];
-        Stack<Integer> stack=new Stack<>();
+		//Your code goes here
+        int[] span=new int[price.length];
+        Stack<Integer> stack=new Stack<Integer>();
         span[0]=1;
         stack.push(0);
-        for(int i=0;i<price.length;i++){
-
-            while(!stack.isEmpty() && price[stack.peek()]<=price[i]){
+        
+        for (int i=1;i<price.length;i++)
+        {
+            while(!stack.isEmpty() && price[stack.peek()]<price[i])
+            {
                 stack.pop();
             }
-            if(stack.isEmpty())
-                if(i>0 && price[i-1]==price[i])
-                	span[i]=1;
-            	else
-                	span[i]=i+1;
+            //System.out.println(stack.size());
+            
+            if (stack.isEmpty())
+            {
+                span[i]=i+1;
+            }
             else
+            {
+                //System.out.println("i = "+i);
+                //System.out.println("top = "+stack.peek());
                 span[i]=i-stack.peek();
+            }
             stack.push(i);
+            //System.out.println("New top: "+stack.peek());
+            //System.out.println();
         }
         return span;
+        
 	}
 
 }

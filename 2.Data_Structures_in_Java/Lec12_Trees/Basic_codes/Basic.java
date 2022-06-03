@@ -10,6 +10,19 @@ public class Basic {
 		printlevelwise(root);
 		int n=numnodes(root);
 		System.out.println(n);
+		int largest=largestnode(root);
+		System.out.println(laregst);
+	}
+        private static int largestnode(treenode<Integer> root) {
+		if(root==null)
+			return Integer.MIN_VALUE;
+		int largest=root.data;
+		for(int i=0;i<root.children.size();i++) {
+			int childlargest=largestnode(root.children.get(i));
+			if(childlargest>largest)
+				largest=childlargest;
+		} 
+		return largest;
 	}
         private static int numnodes(treenode<Integer> root) {
 		if(root==null)

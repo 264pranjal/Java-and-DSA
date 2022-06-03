@@ -12,6 +12,18 @@ public class Basic {
 		System.out.println(n);
 		int largest=largestnode(root);
 		System.out.println(laregst);
+		printatk(root,2);
+	}
+	private static void printatk(treenode<Integer> root, int i) {
+		if(i<0)
+			return;
+		if(i==0) {
+			System.out.println(root.data);
+			return;
+		}
+		for(int i1=0;i1<root.children.size();i1++) {
+			printatk(root.children.get(i1),i-1);
+		}
 	}
         private static int largestnode(treenode<Integer> root) {
 		if(root==null)

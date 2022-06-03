@@ -3,11 +3,22 @@ import java.util.*;
 public class Basic {
 
 	public static void main(String[] args) {
-//		Scanner sc=new Scanner(System.in);
-//		treenode<Integer> root=takeinput(sc);
-//		printtree(root);
+		Scanner sc=new Scanner(System.in);
+		treenode<Integer> root=takeinput(sc);
+		printtree(root);
 		treenode<Integer> root=takeinputlevelwise();
 		printlevelwise(root);
+		int n=numnodes(root);
+		System.out.println(n);
+	}
+        private static int numnodes(treenode<Integer> root) {
+		if(root==null)
+			return 0;
+		int num=1;
+		for(int i=0;i<root.children.size();i++) {
+			num+=numnodes(root.children.get(i));
+		}
+		return num;
 	}
 	private static void printlevelwise(treenode<Integer> root) {
 		

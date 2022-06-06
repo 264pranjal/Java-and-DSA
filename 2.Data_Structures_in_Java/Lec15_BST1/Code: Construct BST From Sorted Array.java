@@ -13,3 +13,25 @@ Sample Input 1:
 Sample Output 1:
 4 2 1 3 6 5 7 
 */
+public class Solution {
+	
+		public static BinaryTreeNode<Integer> SortedArrayToBST(int[] arr, int n){
+            if(n<=0)
+                return null;
+            if(n==1){
+                BinaryTreeNode<Integer> root=new BinaryTreeNode<>(arr[arr.length-1]);
+                return root;
+            }
+			return intobst(arr,0,n-1);
+		}
+    	public static BinaryTreeNode<Integer> intobst(int[] arr,int start,int end){
+            if(start>end){
+                return null;
+            }
+            int rootnode=(start+end)/2;
+            BinaryTreeNode<Integer> root=new BinaryTreeNode<>(arr[rootnode]);
+            root.left=intobst(arr,start,rootnode-1);
+            root.right=intobst(arr,rootnode+1,end);
+            return root;
+        }
+	}

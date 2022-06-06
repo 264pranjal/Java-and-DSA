@@ -20,3 +20,21 @@ Sample Output 2 :
 false
 */
 
+public class Solution {
+
+	public static boolean searchInBST(BinaryTreeNode<Integer> root, int k) {
+		if(root==null)
+            return false;
+        if(root.data==k)
+            return true;
+        else if(root.data>k){
+            if(searchInBST(root.left,k))
+                return true;
+        }
+        else if(root.data<k){
+            if(searchInBST(root.right,k))
+                return true;
+        }
+        return false;
+	}
+}

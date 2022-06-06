@@ -14,3 +14,30 @@ Sample Input 1:
 Sample Output 1:
 6 7 8 10
 */
+import java.util.*;
+public class Solution {	
+		public static void elementsInRangeK1K2(BinaryTreeNode<Integer> root,int k1,int k2){
+			if(root==null)
+                return;
+            ArrayList<Integer> ans=new ArrayList<>();
+            ans=elementsInRangeK1K2(root,k1,k2,ans);
+            Collections.sort(ans);
+            for(int i=0;i<ans.size();i++){
+                System.out.print(ans.get(i)+" ");
+            }
+            
+		}
+       public static ArrayList<Integer> elementsInRangeK1K2(BinaryTreeNode<Integer> root,int k1,int k2,ArrayList<Integer> ans){
+           	if(root==null)
+                return ans;
+            if(root.data>=k1 && root.data<=k2)
+                ans.add(root.data);
+            if(root.data<=k2)
+                elementsInRangeK1K2(root.right,k1,k2,ans);
+            if(root.data>=k1)
+                elementsInRangeK1K2(root.left,k1,k2,ans);
+           return ans;
+       }
+		
+		
+	}

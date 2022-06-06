@@ -16,3 +16,29 @@ Sample Input 2 :
 Sample Output 2 :
 false
 */
+public class Solution {
+
+	public static boolean isBST(BinaryTreeNode<Integer> root) {
+        if(root==null)
+            return true;
+        int leftmax=maximum(root.left);
+        int rightmin=minimum(root.right);
+        boolean output = (root.data>leftmax) && (root.data<=rightmin) && isBST(root.left) && isBST(root.right);
+        return output;
+	}
+    public static int maximum(BinaryTreeNode<Integer> root){
+        if(root==null)
+            return Integer.MIN_VALUE;
+        int left=maximum(root.left);
+        int right=maximum(root.right);
+        return Math.max(root.data,Math.max(left,right));
+    }
+    public static int minimum(BinaryTreeNode<Integer> root){
+        if(root==null)
+            return Integer.MAX_VALUE;
+        int left=minimum(root.left);
+        int right=minimum(root.right);
+        return Math.min(root.data,Math.min(left,right));
+    }    
+
+}

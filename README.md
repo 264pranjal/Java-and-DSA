@@ -18,7 +18,7 @@
 2. **Course 2: [Data Structures and Algorithms in Java](https://www.codingninjas.com/courses/online-java-course)** - Completed 
 3. **Course 3: [Operating Systems](https://www.codingninjas.com/courses/operating-systems)** - Completed
 4. **Course 4: [Database Management System (DBMS)](https://www.codingninjas.com/courses/dbms-course)** - Completed 
-5. **Course 5: [System Design](https://www.codingninjas.com/courses/system-design)** - Completed 
+5. **Course 5: [System Design](https://www.codingninjas.com/courses/system-design)** - In progress
 
 ## Certificates
 

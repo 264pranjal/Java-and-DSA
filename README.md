@@ -18,7 +18,7 @@
 2. **Course 2: [Data Structures and Algorithms in Java](https://www.codingninjas.com/courses/online-java-course)** - Completed 
 3. **Course 3: [Operating Systems](https://www.codingninjas.com/courses/operating-systems)** - Completed
 4. **Course 4: [Database Management System (DBMS)](https://www.codingninjas.com/courses/dbms-course)** - Completed 
-5. **Course 5: [System Design](https://www.codingninjas.com/courses/system-design)** - In progress
+5. **Course 5: [System Design](https://www.codingninjas.com/courses/system-design)** - Completed
 
 ## Certificates
 
@@ -33,6 +33,9 @@
 
 1. **Certificate 1: [Database Management System (DBMS)](https://certificate.codingninjas.com/view/65ab9f16648069e6)**
 2. **Certificate 2: [Database Management System (DBMS)] [Certificate of Excellence](https://certificate.codingninjas.com/view/08bbd0c1e7686112)**
+
+1. **Certificate 1: [System Design](https://certificate.codingninjas.com/view/f04e7c0f748e19e9)**
+2. **Certificate 2: [System Design] [Certificate of Excellence](https://certificate.codingninjas.com/view/046555a17108b450)**
 
 
 ## License

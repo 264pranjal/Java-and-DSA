@@ -23,10 +23,10 @@
 ## Certificates
 
 1. **Certificate 1: [Introduction to Java](https://certificate.codingninjas.com/view/40a37e6f99e6ddc2)**
-2. **Certificate 2: [Introduction to Java] [Certificate of Excellence](https://certificate.codingninjas.com/view/40a37e6f99e6ddc2)**
+2. **Certificate 2: [Introduction to Java] [Certificate of Excellence](https://certificate.codingninjas.com/view/7bc8b1b0a8efbd9f)**
 
-1. **Certificate 1: [Data Structures in JAVA](https://certificate.codingninjas.com/view/0f5d2b0e6b19f753)**
-2. **Certificate 2: [Data Structures in JAVA] [Certificate of Excellence](https://certificate.codingninjas.com/view/7847cbb0cb9b6d32)**
+1. **Certificate 1: [Data Structures in JAVA](https://certificate.codingninjas.com/view/6e73e8dbcc586578)**
+2. **Certificate 2: [Data Structures in JAVA] [Certificate of Excellence](https://certificate.codingninjas.com/view/a577c6be390eaa6b)**
 
 1. **Certificate 1: [Operating Systems](https://certificate.codingninjas.com/view/c207b72427078723)**
 2. **Certificate 2: [Operating Systems][Certificate of Excellence](https://certificate.codingninjas.com/view/5b78c73745d0c857)**

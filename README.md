@@ -29,6 +29,7 @@
 2. **Certificate 2: [Data Structures in JAVA] [Certificate of Excellence](https://certificate.codingninjas.com/view/7847cbb0cb9b6d32)**
 
 1. **Certificate 1: [Operating Systems](https://certificate.codingninjas.com/view/c207b72427078723)**
+2. **Certificate 2: [Operating Systems][Certificate of Excellence](https://certificate.codingninjas.com/view/5b78c73745d0c857)**
 
 1. **Certificate 1: [Database Management System (DBMS)](https://certificate.codingninjas.com/view/65ab9f16648069e6)**
 2. **Certificate 2: [Database Management System (DBMS)] [Certificate of Excellence](https://certificate.codingninjas.com/view/08bbd0c1e7686112)**
